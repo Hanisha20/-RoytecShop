@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{%block content %}
+    <h1>Home</h1>
+    {% comment %} {%for product in products%}
+        <div class="card" style="width: 18rem;">
+            <img src="{{product.image.url}}" class="card-img-top" alt="...">
+            <a href="{{product.get_absolute_url}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{product.name}}</h5>
+                </div>
+            </a>
+        </div>
+    {%endfor%} {% endcomment %}
+{%endblock %} 

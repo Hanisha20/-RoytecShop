@@ -1,0 +1,25 @@
+{%load static%}
+
+{%block link%}
+<link rel="styleSheet" type="text/css" href="{% static 'css/sidebar.css' %}">
+{%endblock%}
+
+    <div class="header">
+        <p>مدیراژ</p>
+        <div class="logo">
+
+        </div>
+    </div>
+    <div class="menu-btn open" >
+        <div class="menu-btn-burger open"></div>
+    </div>
+    
+    <div  class="sidebar">
+        <ul class="sidebar-list">
+            <li><a href="{%url 'homeApp:home' %}">صفحه اصلی</a></li>
+            {% comment %} <li><a class="nav-link active" aria-current="page" href="{% url 'accountsApp:User_login' %}">ورود</a></li>
+            <li><a class="nav-link active" aria-current="page" href="{% url 'accountsApp:Person_List' %}">لیست اشخاص</a></li>
+            <li><a class="nav-link active" aria-current="page" href="{% url 'accountsApp:User_logout' %}">خروج</a></li>
+        </ul> {% endcomment %}
+    </div>
+    <script rel="styleSheet" type="text/javascript" src="{% static 'js/sidebar.js' %}"></script>
